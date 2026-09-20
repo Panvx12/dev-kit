@@ -22,5 +22,5 @@ Below is the list of tools currently available in this repository:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Panvx12/YOUR_REPOSITORY_NAME.git](https://github.com/Panvx12/YOUR_REPOSITORY_NAME.git)
-   cd YOUR_REPOSITORY_NAME
+   git clone [https://github.com/Panvx12/dev-kit.git](https://github.com/Panvx12/dev-kit.git)
+   cd dev-kit
