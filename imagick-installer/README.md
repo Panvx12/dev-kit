@@ -25,3 +25,4 @@ A simple, automated batch script (`.bat`) designed to download and install **Ima
    ```cmd
  git clone https://github.com/Panvx12/dev-kit.git
  cd dev-kit/imagick-installer
+```
