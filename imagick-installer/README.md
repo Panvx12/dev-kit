@@ -23,5 +23,5 @@ A simple, automated batch script (`.bat`) designed to download and install **Ima
 
 1. **Clone or Download** this repository:
    ```cmd
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
-   cd YOUR_REPOSITORY
+   git clone [https://github.com/Panvx12/dev-kit.git](https://github.com/Panvx12/dev-kit.git)
+   cd dev-kit
