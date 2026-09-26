@@ -23,5 +23,7 @@ A simple, automated batch script (`.bat`) designed to download and install **Ima
 
 1. **Clone or Download** this repository:
    ```cmd
-   git clone https://github.com/Panvx12/dev-kit.git
-   cd dev-kit/imagick-installer
+   git clone --depth 1 --filter=blob:none --sparse https://github.com/Panvx12/dev-kit.git
+   cd dev-kit
+   git sparse-checkout set imagick-installer
+   cd imagick-installer
