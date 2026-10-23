@@ -1,7 +1,0 @@
-# Windows scripts must keep CRLF line endings (batch labels/goto can break with LF-only)
-*.bat text eol=crlf
-*.cmd text eol=crlf
-*.ps1 text eol=crlf
-
-# Docs
-*.md  text eol=lf
