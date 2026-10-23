@@ -1,74 +1,73 @@
-# .NET SDK Installation Guide for Godot Engine (C#)
+# .NET Download & Installation Guide
 
-This guide provides step-by-step instructions for downloading and installing the **.NET SDK** required to run and build C# projects in **Godot Engine (.NET Version)**.
-
----
-
-## 📋 Prerequisites
-
-Before setting up .NET for Godot, ensure you have:
-- **Godot Engine (.NET / Mono version)** downloaded and extracted.
-- An active internet connection.
+Follow these steps to download and install the .NET SDK or Runtime on your machine.
 
 ---
 
-## 🚀 Step 1: Download the .NET SDK
-
-1. Open your web browser and navigate to the official Microsoft .NET download page:
-   👉 [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
-
-2. Under the **.NET SDK** section, locate the latest **LTS (Long Term Support)** version (e.g., **.NET 8.0 SDK** or newer).
-   > **Note:** Make sure to download the **SDK (Software Development Kit)**, not just the *Runtime*. The SDK includes the tools and compiler necessary to build C# applications.
-
-3. Select the appropriate installer for your operating system:
-   - **Windows:** `x64` Installer (or `Arm64` if on ARM architecture).
-   - **macOS:** `x64` or `Arm64` Installer (for Apple Silicon M1/M2/M3 chips).
-   - **Linux:** Follow the package manager instructions for your distribution.
+## Step 1: Visit the Official Download Page
+Go to the official Microsoft .NET downloads page:  
+👉 [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
 
 ---
 
-## ⚙️ Step 2: Install the .NET SDK
+## Step 2: Choose What You Need
+Depending on your goal, select the appropriate package:
 
-1. Run the downloaded installer executable (e.g., `dotnet-sdk-8.x.x-win-x64.exe`).
-2. Follow the setup wizard prompts and complete the installation using default options.
-3. Once the installation finishes, click **Close**.
+* **.NET SDK (Software Development Kit):** Choose this if you are a developer writing, building, and compiling code. The SDK includes everything you need to build apps, including the runtime.
+* **.NET Runtime / ASP.NET Core Runtime:** Choose this if you only need to *run* an existing .NET application on a machine or server without developing code.
 
 ---
 
-## 🔍 Step 3: Verify the Installation
+## Step 3: Select Your Version
+* **LTS (Long Term Support):** Recommended for production environments and enterprise stability (e.g., .NET 8).
+* **Current:** Recommended if you want to experiment with the newest features and latest language updates.
 
-To verify that the .NET SDK is properly installed and added to your system's `PATH`:
+---
 
-1. Open your terminal or command prompt:
-   - **Windows:** Press `Win + R`, type `cmd`, and press **Enter**.
-   - **macOS / Linux:** Open the **Terminal** app.
+## Step 4: Download and Install for Your OS
 
-2. Run the following command:
+### Windows
+1. Download the `.exe` or `.msi` installer.
+2. Run the installer and complete the setup wizard.
+
+### macOS
+1. Download the `.pkg` installer or install via Homebrew:
    ```bash
-   dotnet --version
+   brew install --cask dotnet-sdk
    ```
+2. Follow the on-screen installation prompts.
 
-3. **Expected Result:** The command prompt should display the installed SDK version number (e.g., `8.0.400`).
-
----
-
-## 🛠️ Step 4: Configure Code Editor (Recommended)
-
-To write C# code efficiently with code completion (IntelliSense) and debugging features, configure a code editor like **VS Code**:
-
-1. Install **[Visual Studio Code](https://code.visualstudio.com/)**.
-2. Open VS Code and install the following extensions from the Marketplace:
-   - **C# Dev Kit** (Official extension by Microsoft)
-   - **Godot C# Tools** (By Ignacio Roldán Etcheverry)
-
-3. Link the editor in Godot Engine:
-   - Open Godot.
-   - Go to **Editor** $\rightarrow$ **Editor Settings**.
-   - Navigate to **Dotnet** $\rightarrow$ **Editor** in the left menu.
-   - Set **External Editor** to **Visual Studio Code** (or your preferred editor).
+### Linux
+Install via your distribution's package manager (e.g., Ubuntu/Debian):
+```bash
+sudo apt-get update && \
+sudo apt-get install -y dotnet-sdk-8.0
+```
 
 ---
 
-## 🎉 You're All Set!
+## Step 5: Verify the Installation
+Open a terminal, Command Prompt, or PowerShell window and run:
 
-You can now create, open, and run C# scripts inside Godot Engine without compilation errors.
+```bash
+dotnet --version
+```
+
+If the installation was successful, the terminal will display your installed version number (e.g., `8.0.x`).
+
+---
+
+## Troubleshooting & Useful Commands
+
+* **List all installed SDKs:**
+  ```bash
+  dotnet --list-sdks
+  ```
+* **List all installed Runtimes:**
+  ```bash
+  dotnet --list-runtimes
+  ```
+* **Check system environment information:**
+  ```bash
+  dotnet --info
+  ```
